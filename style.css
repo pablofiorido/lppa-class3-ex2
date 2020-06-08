@@ -12,29 +12,32 @@ body {
     display: inline-block;
     left: 0;
     position: relative;
-    -webkit-transition: left .2s;
     transition: left .2s;
     padding: 10px;
 }
+
 .container {
     height: 392px;
     position: relative;
 }
+
 .column-container {
     display: flex;
     height: 300px;
     width: 400px;
     background-color: #09C;
-    margin: 250px auto 0px;
-    padding: 0px 20px;
+    margin: 150px auto 0;
+    padding: 0 20px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .column {
     height: 300px;
     width: calc(100% / 7);
     background-color: #08a;
 }
+
 .cell {
     background-color: white;
     border-radius: 50%;
@@ -42,45 +45,52 @@ body {
     height: 35px;
     width: 35px;
 }
+
 .base {
     background-color: #05a;
-    height: 30px;
+    height: 5px;
     margin: auto;
-    padding: 0px 20px;
+    padding: 20px;
     width: 400px;
 }
 
 .base2 {
-    background-color: #ffffff;
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    height: 10px;
     margin: auto;
-    padding: 0px 20px;
+    padding: 20px;
     width: 400px;
 }
 
-
-#small-disc-you {
-    float: left;
-    background-image: url("https://c4arena.com/assets/disc-0.svg");
-    transform: scale(1);
+.player-field-you{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://c4arena.com/assets/disc-0.svg);;
 }
 
-#small-disc-opponent {
-    float: right;
-    background-image: url("https://c4arena.com/assets/disc-1.svg");
-    transform: scale(1);
+.text-field-you{
+    width: 90px;
+    text-align: left;
 }
 
-#name-opponent{
-    text-align: end;
+.player-field-go{
+    width: 40px;
 }
 
-#go{
-    text-align: center;
+.text-field-go{
+    width: 90px;
+    text-align: left;
 }
 
-#small-disc-you, #small-disc-opponent {
-    background-size: 100% 100%;
-    height: 32px;
-    width: 32px;
+.player-field-opponent{
+    width: 40px;
+    height: 40px;
+    background-image: url(https://c4arena.com/assets/disc-1.svg);
+}
+
+.text-field-opponent{
+    width: 90px;
+    text-align: left;
 }
