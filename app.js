@@ -8,12 +8,21 @@ var column6
 var column7
 
 var col1cell7
+var col1cell6
+var col1cell5
+var col1cell4
+var col1cell3
+var col1cell2
+var col1cell1
+
 var col2cell7
 var col3cell7
 var col4cell7
 var col5cell7
 var col6cell7
 var col7cell7
+
+var count = 0
 
 //function clicked() {
 //    for (var i = 0; i < constructor.length; i++) {
@@ -23,8 +32,36 @@ var col7cell7
 
 function control1() {
     console.log("click ok test")
-    col1cell7 = document.getElementById("column1-c7")
-    col1cell7.style.background = 'red'
+    count++
+    console.log(count)
+    if (count == 1) {
+        col1cell7 = document.getElementById("column1-c7")
+        col1cell7.style.background = 'red'
+    } else
+        if (count == 2) {
+            col1cell6 = document.getElementById("column1-c6")
+            col1cell6.style.background = 'red'
+        } else
+            if (count == 3) {
+                col1cell5 = document.getElementById("column1-c5")
+                col1cell5.style.background = 'red'
+            } else
+                if (count == 4) {
+                    col1cell4 = document.getElementById("column1-c4")
+                    col1cell4.style.background = 'red'
+                } else
+                    if (count == 5) {
+                        col1cell3 = document.getElementById("column1-c3")
+                        col1cell3.style.background = 'red'
+                    } else
+                        if (count == 6) {
+                            col1cell2 = document.getElementById("column1-c2")
+                            col1cell2.style.background = 'red'
+                        } else
+                            if (count == 7) {
+                                col1cell1 = document.getElementById("column1-c1")
+                                col1cell1.style.background = 'red'
+                            }
 }
 
 function control2() {
@@ -52,7 +89,6 @@ function control5() {
 }
 
 function control6() {
-
     col6cell7 = document.getElementById("column6-c7")
     col6cell7.style.background = 'red'
 }
@@ -81,7 +117,7 @@ window.onload = function () {
     column4.onclick = control4
     column5.onclick = control5
     column6.onclick = control6
-    column7.onclick = control7
+    column7.onclick = control6
 
     //console.log(constructor)
 }
